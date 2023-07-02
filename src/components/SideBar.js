@@ -3,10 +3,8 @@ import {
   MdClose,
   MdMenu,
   MdAdd,
-  MdOutlineCoffee,
   MdOutlineVpnKey,
 } from 'react-icons/md';
-import { AiOutlineGithub } from 'react-icons/ai';
 import { ChatContext } from '../context/chatContext';
 import bot from '../assets/bot.ico';
 import DarkMode from './DarkMode';
@@ -66,30 +64,6 @@ const SideBar = () => {
 
       <div className='nav__bottom'>
         <DarkMode open={open} />
-        <div className='nav'>
-          <a
-            href='https://www.buymeacoffee.com/eyuel'
-            rel='noreferrer'
-            target='_blank'
-            className='nav__item'>
-            <div className='nav__icons'>
-              <MdOutlineCoffee />
-            </div>
-            <h1 className={`${!open && 'hidden'}`}>Support this project</h1>
-          </a>
-        </div>
-        <div className='nav'>
-          <a
-            rel='noreferrer'
-            target='_blank'
-            href='https://github.com/EyuCoder/chatgpt-clone'
-            className='nav__item'>
-            <div className='nav__icons'>
-              <AiOutlineGithub />
-            </div>
-            <h1 className={`${!open && 'hidden'}`}>Clone on Github</h1>
-          </a>
-        </div>
         <div onClick={() => setModalOpen(true)} className='nav'>
           <span htmlFor='setting-modal' className='nav__item'>
             <div className='nav__icons'>
