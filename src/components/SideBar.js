@@ -41,7 +41,7 @@ const SideBar = () => {
           </span>
         </div>
         <h1 className={`sidebar__app-title ${!open && 'scale-0 hidden'}`}>
-          ChatGPT
+          Rasad AI Bot
         </h1>
         <div className={`sidebar__btn-close`} onClick={() => setOpen(!open)}>
           {open ? (
@@ -69,7 +69,7 @@ const SideBar = () => {
             <div className='nav__icons'>
               <MdOutlineVpnKey />
             </div>
-            <h1 className={`${!open && 'hidden'}`}>OpenAI Key</h1>
+            <h1 className={`${!open && 'hidden'}`}>Core Model API Key</h1>
           </span>
         </div>
       </div>
